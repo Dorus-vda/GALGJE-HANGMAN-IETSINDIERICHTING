@@ -41,7 +41,16 @@ ____|____
     ______
     |    |
     |    o
-    |   /|\
+    |   /|\\
+    |  
+____|____
+ """ 
+    ,
+    """
+    ______
+    |    |
+    |    o
+    |   /|\\
     |   / \\
 ____|____
 """]
@@ -149,6 +158,8 @@ while klaar == 0:
                 for letter in Answer_Galgje:
                     if letter in All_correct:
                         Display = Display + letter + " "
+                    if letter == " ":
+                        Display = Display + "   "
                     else:
                         Display = Display + "_" + " "
                         allesgoed = False
