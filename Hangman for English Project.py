@@ -41,16 +41,7 @@ ____|____
     ______
     |    |
     |    o
-    |   /|\\
-    |  
-____|____
- """ 
-    ,
-    """
-    ______
-    |    |
-    |    o
-    |   /|\\
+    |   /|\
     |   / \\
 ____|____
 """]
@@ -133,6 +124,19 @@ while klaar == 0:
         print("The defenition of the word is: used to ask for someone's opinion")
     elif Answer_Galgje == "forget about":
         print("The defenition of the word is: to not remember something")
+    elif Answer_Galgje == "about to":
+        print("The defenition of the word is: to be going to do something very soon")
+    elif Answer_Galgje == "hologram":
+        print("The defenition of the word is: a photograph or image which appears to be solid and have depth when light shines on it in a particular way")
+    elif Answer_Galgje == "robot":
+        print("The defenition of the word is: a machine controlled by a computer, which can move and do other things that people can do")
+    elif Answer_Galgje == "transplant":
+        print("The defenition of the word is: an operation in which a new organ is put into someone's body")
+    elif Answer_Galgje == "technology":
+        print("The defenition of the word is: knowledge, equipment, and methods that are used in science and industry")
+    elif Answer_Galgje == "poverty":
+        print("The defenition of the word is: the condition of being extremely poor")
+
     soort_input = input(
         "Guess one letter or space or a whole word. For a letter type: a letter, for a word type: '?'")
     if soort_input != "?":
@@ -158,8 +162,6 @@ while klaar == 0:
                 for letter in Answer_Galgje:
                     if letter in All_correct:
                         Display = Display + letter + " "
-                    if letter == " ":
-                        Display = Display + "   "
                     else:
                         Display = Display + "_" + " "
                         allesgoed = False
